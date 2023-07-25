@@ -7,6 +7,9 @@ const reducerfn = (state = { counter: 10}, action) => {
     if (action.type === "DEC") {
         return {counter: state.counter-1}      // This is mutated copy of the state variable counter
     }
+    if (action.type === "ADDBY") {
+        return {counter: state.counter+ action.payload}      // This is mutated copy of the state variable counter
+    }
    return state
 
 }
