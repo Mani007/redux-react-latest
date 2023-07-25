@@ -1,7 +1,13 @@
 import { createStore } from 'redux';
-
-const reducerfn = (state = { counter: 0}, action) => {
-    return state
+// Reducer function should e synchronus function and we should not mutate the original state, means we need to create a copy of state and ten mutate it.  
+const reducerfn = (state = { counter: 10}, action) => {
+    if (action.type === "INC") {
+        return {counter: state.counter+1}      // This is mutated copy of the state variable
+    }
+    if (action.type === "DEC") {
+        return {counter: state.counter-1}      // This is mutated copy of the state variable counter
+    }
+   return state
 
 }
 

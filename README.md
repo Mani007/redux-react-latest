@@ -96,4 +96,4 @@ git push -u origin main
 ```
 npm install redux react-redux
 ```
-
+*Note*: Reducer function should be synchronus(async/await is not allowed) function and we should not mutate the original state, means we need to create a copy of state and ten mutate it. 
