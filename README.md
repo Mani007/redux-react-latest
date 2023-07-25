@@ -88,10 +88,10 @@ git branch -M main
 git push -u origin main   
 ```
 ### Redux-React Notes
-*Redux*: Complex state management tool using CDS(central data store) principle.   
-*Reducer* functions: They manages the state and return the newly updated states. They take actions as input. 
-*Action*: Input to the function are type and payload(data).
-*Dispatch*: Sends action to update te data/state. It is often initiated by event. 
+**Redux**: Complex state management tool using CDS(central data store) principle.   
+**Reducer** functions: They manages the state and return the newly updated states. They take actions as input. 
+**Action**: Input to the function are type and payload(data).
+**Dispatch**: Sends action to update te data/state. It is often initiated by event. 
 
 ```
 npm install redux react-redux
@@ -109,3 +109,7 @@ npm install redux react-redux
 -- And based on action type in reducer we have different type of state handlers.    
 -- Finally we have to provid the immutable copy back from reducer by making sure that reducer function will take      
 -- -- synchronus(async/await is not allowed) function and we should not mutate the original state, means we need to create a copy of state and then mutate it.
+
+## Redux Toolkit
+Advance version of redux implementation. Here we can mutate the state, also has some advance implementation for design pattern such as **redux-thunk** pattern.   
+This also has **RTK** redux toolkit query for faster implementation.  
