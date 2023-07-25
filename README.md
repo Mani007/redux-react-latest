@@ -72,19 +72,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### GIT repo setup
 #### For new repo
 '''
-echo "# redux-react-latest" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Mani007/redux-react-latest.git
-git push -u origin main
+echo "# redux-react-latest" >> README.md  
+git init   
+git add README.md   
+git commit -m "first commit"   
+git branch -M main   
+git remote add origin https://github.com/Mani007/redux-react-latest.git    
+git push -u origin main    
 '''
 
 #### For new repo
 '''
-git remote add origin https://github.com/Mani007/redux-react-latest.git
-git branch -M main
-git push -u origin main
+git remote add origin https://github.com/Mani007/redux-react-latest.git   
+git branch -M main   
+git push -u origin main   
 '''
 
