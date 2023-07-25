@@ -96,4 +96,16 @@ git push -u origin main
 ```
 npm install redux react-redux
 ```
-*Note*: Reducer function should be synchronus(async/await is not allowed) function and we should not mutate the original state, means we need to create a copy of state and ten mutate it. 
+*Note*: Reducer function should be synchronus(async/await is not allowed) function and we should not mutate the original state, means we need to create a copy of state and then mutate it. 
+
+### Redux in Action 
+![Redux Image](./public/reduxdataflowdiagram-49fa8c3968371d9ef6f2a1486bd40a26.gif)
+
+-- App.js as useSeletor to select the variable from te store.   
+-- App.js has useDispatch created variable in called dispact to dispatch type of actions. 
+-- In main index.js we need to wrap te app component in the provider component. Provider component is provided by  react-redux. 
+-- In the store folder, in the main index,js file, we have created store by supplying reducer function to it as createStore argument.
+-- In the reducer function we have provided two argument as state and action. 
+-- And based on action type in reducer we have different type of state handlers. 
+-- Finally we have to provid the immutable copy back from reducer by making sure that reducer function will take   
+-- -- synchronus(async/await is not allowed) function and we should not mutate the original state, means we need to create a copy of state and then mutate it.
