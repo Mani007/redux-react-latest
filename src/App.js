@@ -1,23 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { UseSelector, useSelector } from 'react-redux/es/hooks/useSelector';
 
 function App() {
+  const counter = useSelector((state) => state.counter)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      hello world
+      <h2>Counter is {counter} </h2>
     </div>
   );
 }

@@ -87,4 +87,13 @@ git remote add origin https://github.com/Mani007/redux-react-latest.git
 git branch -M main   
 git push -u origin main   
 ```
+### Redux-React Notes
+*Redux*: Complex state management tool using CDS(central data store) principle.   
+*Reducer* functions: They manages the state and return the newly updated states. They take actions as input. 
+*Action*: Input to the function are type and payload(data).
+*Dispatch*: Sends action to update te data/state. It is often initiated by event. 
+
+```
+npm install redux react-redux
+```
 
